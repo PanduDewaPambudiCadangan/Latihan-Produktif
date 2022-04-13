@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package telkom;
+
+import java.util.Scanner;
+/**
+ *
+ * @author pdewa
+ */
+public class Telkom {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       int Angka1;
+       int Angka2;
+       int Maksimal;
+       Scanner input = new Scanner(System.in);
+       
+        System.out.println("Masukkan angka ke-1 : ");
+        Angka1 = input.nextInt();
+        System.out.println("Masukkan angka ke-2 : ");
+        Angka2 = input.nextInt();
+        
+        if(Angka1>Angka2){
+            Maksimal = Angka1;
+        }
+        else{
+            Maksimal = Angka2;
+        }
+        System.out.println("Angka terbesar adalah : "+Maksimal);
+    }
+    
+}
